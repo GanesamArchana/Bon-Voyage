@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Bon Voyage • Explore the World</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="navbar">
+    <a class="brand" href="/">Bon Voyage</a>
+    <nav>
+      <a href="#destinations">Destinations</a>
+      <a href="#hotels">Hotels</a>
+      <a href="#restaurants">Restaurants</a>
+      <a href="#experiences">Experiences</a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div>
+        <p class="eyebrow">TRAVEL • DISCOVER • SHARE</p>
+        <h1>Make every journey unforgettable.</h1>
+        <p>Explore world-famous destinations, luxury stays, Michelin-starred restaurants and iconic sightseeing spots across the globe.</p>
+        <a class="button" href="#destinations">Explore the world</a>
+      </div>
+    </section>
+
+    <section class="section" id="destinations">
+      <div class="section-heading">
+        <div><p class="eyebrow">DISCOVER THE WORLD</p><h2>Popular places & sights</h2></div>
+        <input id="searchInput" type="search" placeholder="Search places, cities, countries...">
+      </div>
+      <div id="placeGrid" class="grid"></div>
+      <p id="status" class="status"></p>
+    </section>
+
+    <section class="section muted" id="hotels">
+      <div class="section-heading">
+        <div><p class="eyebrow">WORLD-CLASS STAYS</p><h2>Iconic hotels</h2></div>
+      </div>
+      <div id="hotelGrid" class="grid"></div>
+    </section>
+
+    <section class="section" id="restaurants">
+      <div class="section-heading">
+        <div><p class="eyebrow">GLOBAL GASTRONOMY</p><h2>Renowned restaurants</h2></div>
+      </div>
+      <div id="restaurantGrid" class="grid"></div>
+    </section>
+
+    <section class="section muted" id="experiences">
+      <p class="eyebrow">SHARE</p><h2>Share your experience</h2>
+      <form id="reviewForm" class="form-card">
+        <input name="name" placeholder="Your name" required maxlength="80">
+        <input name="title" placeholder="Review title" required maxlength="120">
+        <textarea name="content" placeholder="Tell other travellers about your experience..." required maxlength="1000"></textarea>
+        <select name="rating" required>
+          <option value="">Rating</option><option>5</option><option>4</option><option>3</option><option>2</option><option>1</option>
+        </select>
+        <button class="button" type="submit">Publish review</button>
+        <p id="reviewStatus" class="status"></p>
+      </form>
+    </section>
+  </main>
+
+  <footer>© 2026 Bon Voyage • Global Full-Stack Travel Catalogue</footer>
+  <script src="app.js"></script>
+</body>
+</html>
